@@ -60,7 +60,7 @@ if tipo_de_aposta == "FIELD" or "field":
         h = random.randint(1,6)
         i = random.randint(1,6)
         if h+i==5 or h+i==6 or h+i==7 or h+i==8:
-            print ("Os dados lançados apontaram", h, "e", i)
+            print ("Os dados lançados apontaram", h, 'e', i)
             print ("Você perdeu tudo!")
             print ("Fim da rodada.")
         if h+i==3 or h+i==4 or h+i==9 or h+i==10 or h+i==11:
