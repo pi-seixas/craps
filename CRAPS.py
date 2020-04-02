@@ -5,8 +5,6 @@ fichas = True
 
 fichas = 50
 
-print ("Você possui 50 fichas")
-
 a = input ("Você quer APOSTAR ou SAIR DO JOGO? ")
 
 while a == "APOSTAR":
