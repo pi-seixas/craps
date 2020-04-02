@@ -55,3 +55,74 @@ while a == "APOSTAR":
                 print ("Os dados apontaram", f, "e", g)
                 print ("A soma dos dados resultou em 7! Você perdeu tudo!")
                 print ("Fim da rodada.")
+if tipo_de_aposta == "FIELD" or "field":
+        print ("FASE COME OUT")
+        h = random.randint(1,6)
+        i = random.randint(1,6)
+        if h+i==5 or h+i==6 or h+i==7 or h+i==8:
+            print ("Os dados lançados apontaram", h, "e", i)
+            print ("Você perdeu tudo!")
+            print ("Fim da rodada.")
+        if h+i==3 or h+i==4 or h+i==9 or h+i==10 or h+i==11:
+            print ("Os dados lançados apontaram", h, "e", i)
+            fichas = fichas + valor
+            print ("Você ganhou {} fichas".format(valor))
+            print ("Agora você possui {} fichas".format(fichas))
+            a = input ("Você quer APOSTAR ou SAIR DO JOGO?")
+        if h+i==2:
+            print ("Os dados lançados apontaram", h, "e", i)
+            fichas = fichas + 2*valor
+            print ("Você ganhou {} fichas".format(2*valor))
+            print ("Agora você possui {} fichas".format(fichas))
+            a = input ("Você quer APOSTAR ou SAIR DO JOGO?")
+        if h+i==12:
+            print ("Os dados lançados apontaram", h, "e", i)
+            fichas = fichas + 3*valor
+            print ("Você ganhou {} fichas".format(3*valor))
+            print ("Agora você possui {} fichas".format(fichas))
+            a = input ("Você quer APOSTAR ou SAIR DO JOGO?")
+
+    if tipo_de_aposta == "ANY CRAPS" or "any craps":
+        print ("FASE COME OUT")
+        j = random.randint(1,6)
+        k = random.randint(1,6)
+        if j+k==2 or j+k==3 or j+k==12:
+            print ("Os dados lançados apontaram", j, "e", k)
+            fichas = fichas + 7*valor
+            print ("Você ganhou {} fichas".format(7*valor))
+            print ("Agora você possui {} fichas".format(fichas))
+            a = input ("Você quer APOSTAR ou SAIR DO JOGO?")
+        else:
+            print ("Você perdeu a aposta!")
+            fichas = fichas - valor
+            print ("Você perdeu {} fichas".format(valor))
+            print ("Agora você possui {} fichas".format(fichas))
+            if fichas > 0:
+                a = input ("Você quer APOSTAR ou SAIR DO JOGO?")
+            else:
+                print ("Você não possui mais fichas. Fim da rodada.")
+
+    if tipo_de_aposta == "TWELVE" or "twelve":
+        print ("FASE COME OUT")
+        l = random.randint(1,6)
+        m = random.randint(1,6)
+        if l+m==12:
+            print ("Os dados lançados apontaram", l, "e", m)
+            fichas = fichas + 30*valor
+            print ("Você ganhou {} fichas!".format(30*valor))
+            print ("Agora você possui {} fichas.".format(fichas))
+            a = input ("Você quer APOSTAR ou SAIR DO JOGO?")
+        if l+m!= 12:
+            print ("Os dados lançados apontaram", l, "e", m)
+            fichas = fichas - valor
+            print ("Você perdeu {} fichas!".format(valor))
+            print ("Agora você possui {} fichas.".format(fichas))
+            if fichas > 0:
+                a = input ("Você quer APOSTAR ou SAIR DO JOGO?")
+            else:
+                print ("Você não possui mais fichas. Fim da rodada.")
+
+if a == "SAIR DO JOGO":
+    print ("Fim de jogo.")
+
+
