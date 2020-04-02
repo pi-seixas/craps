@@ -127,7 +127,7 @@ while a == "APOSTAR" or "apostar":
             else:
                 print ("Você não possui mais fichas. Fim da rodada.")
 
-
-print ("Fim de jogo.")
+if a == "SAIR DO JOGO" or "sair do jogo":
+    print ("Fim de jogo.")
 
 
