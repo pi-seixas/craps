@@ -47,8 +47,6 @@ while a == "APOSTAR":
                 f = random.randint(1,6)
                 g = random.randint(1,6)
                 x = input("Aperte enter para lançar novamente ")
-                if x==" " or "":
-                    continue
             if f + g == soma:
                 print ("Os dados apontaram", f, "e", g)
                 fichas = fichas + valor
