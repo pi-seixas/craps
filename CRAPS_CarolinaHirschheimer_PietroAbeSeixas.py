@@ -42,7 +42,7 @@ while a == "APOSTAR":
                 fichas = 50
                 a = input("Você quer APOSTAR ou SAIR DO JOGO? ")
         else:
-            z = input("Você passou para a fase point. Digite enter para continuar.")
+            z = input("Você passou para a fase point. Aperte enter para continuar.")
             print ("")
             print ("FASE POINT")
             f = random.randint(1,6)
