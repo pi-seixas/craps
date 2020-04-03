@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+
+#Feito por Carolina Hirschheimer e Pietro Abe Seixas, Turma A.
+
 import random
 
 fichas = True
